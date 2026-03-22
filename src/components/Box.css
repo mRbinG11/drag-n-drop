@@ -1,0 +1,25 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px dashed lightgrey;
+    border-radius: 7px;
+    padding: 0.11rem;
+    font-size: 4rem;
+    font-weight: 900;
+    user-select: none;
+    cursor: grab;
+}
+
+.box:active {
+    cursor: grabbing;
+    border-color: cornflowerblue;
+}
+
+.box:hover {
+    border-color: cornflowerblue;
+}
+
+.box.drag-over {
+    border-color: lightgreen;
+}
